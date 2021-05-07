@@ -31,7 +31,7 @@ jobs:
         if: env.KUAISHOUMV
         run: |
           cd ~/Scripts
-          node Task/Auto_Kuaishou.js
+          node jingdian/Kuaishou.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
