@@ -25,12 +25,12 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
-          cd ~/Scripts
+          cd ~/jingdian
           npm install
       - name: '运行 【快手视频】'
         if: env.KUAISHOUMV
         run: |
-          cd ~/Scripts
+          cd ~/dingdian
           node jingdian/Kuaishou.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
